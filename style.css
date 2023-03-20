@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to right, #FF52CD, #4F11D6, #FE4D00);
+    font-family: 'century gothic', sans-serif;
+}
+
+#form {
+    width: 400px;
+    margin: 5vh auto 0 auto;
+    padding: 20px;
+    background-color: FFE49E;
+    border-radius: 4px;
+     box-shadow: 0 20.8px 15.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 30.8px 40.5px rgba(0,0,0,0.58) ;
+    font-size: 12px;
+}
+
+#form h2 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form #button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.controller {
+    display: block;
+    position: relative;
+}
+
+.controller input[type="text"], input[type="password"]{
+    border: 1px solid black;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.controller label[for="country"], label[for="birthdate"]{
+    margin-bottom: 15px;
+    display: block;
+}
+
+.controller select[name="country"]{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;e;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+.controller select[name="day"], select[name="month"], select[name="year"]{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;e;
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 30%;
+}
+
+.controller input:focus {
+    outline: 0;
+}
+
+.controller.success input {
+    border-color: #09c372;
+}
+
+.controller.error input {
+    border-color: #ff3860;
+}
+
+.controller.error select{
+    border-color: #ff3860;
+}
+
+.controller .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: auto;
+    
+}
